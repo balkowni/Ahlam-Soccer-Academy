@@ -593,6 +593,7 @@ section {
 .carousel-inner {
     position: relative;
     min-height: 260px;
+    transition: height 420ms ease; /* animate height when slide content changes */
 }
 
 .value-slide {
@@ -622,7 +623,7 @@ section {
 
 .value-image-wrap {
     border-radius: 28px;  /* rounder corners */
-    overflow: hidden;     /* clip the image to the rounded shape */
+    /* don't clip here; let the inner image handle its own rounding to avoid top cut-off */
     border: 1px solid rgba(195, 166, 255, 0.7);
     background: radial-gradient(circle at top left, #5a3cc3, #1d103b);
     position: relative;
@@ -631,7 +632,7 @@ section {
 
 .value-image-wrap img {
     width: 100%;
-    height: 100%;
+    height: auto;         /* keep natural aspect ratio to prevent vertical cropping */
     object-fit: cover;     /* fill the box */
     opacity: 0.97;
     border-radius: 24px;   /* actually round the photo itself */

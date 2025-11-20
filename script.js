@@ -21,8 +21,17 @@ const slides = document.querySelectorAll(".value-slide");
 const dots = document.querySelectorAll(".dot-btn");
 const prevBtn = document.getElementById("prevSlide");
 const nextBtn = document.getElementById("nextSlide");
+const carouselInner = document.querySelector(".carousel-inner");
 let current = 0;
 let autoTimer;
+
+function updateCarouselHeight() {
+    if (!carouselInner) return;
+    const active = carouselInner.querySelector(".value-slide.active");
+    if (!active) return;
+    const newHeight = active.scrollHeight;
+    carouselInner.style.height = `${newHeight}px`;
+}
 
 function showSlide(index) {
     if (!slides.length) return;
@@ -36,6 +45,7 @@ function showSlide(index) {
     dots.forEach((dot, i) => {
         dot.classList.toggle("active", i === current);
     });
+    updateCarouselHeight();
 }
 
 function nextSlide() {
@@ -77,6 +87,7 @@ dots.forEach((dot) => {
 
 // Start autoplay when page loads
 startAutoSlide();
+updateCarouselHeight();
 
 // Pause on hover
 const carousel = document.querySelector(".carousel");
@@ -84,6 +95,11 @@ if (carousel) {
     carousel.addEventListener("mouseenter", stopAutoSlide);
     carousel.addEventListener("mouseleave", startAutoSlide);
 }
+
+// Resize handler to keep height correct on viewport changes
+window.addEventListener("resize", () => {
+    updateCarouselHeight();
+});
 
 // Scroll reveal
 const reveals = document.querySelectorAll(".reveal");
