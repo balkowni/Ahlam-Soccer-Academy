@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Ahlam Soccer Academy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Ahlam Soccer Academy - Empowering young athletes with values, guiding them from their first kicks to competitive excellence." />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<!-- HEADER -->
+<header>
+    <div class="container">
+        <nav class="nav">
+            <div class="brand">
+                <div class="brand-logo">
+                    <!-- Logo in assets folder -->
+                    <img src="assets/logo-ahlam.png" alt="Ahlam Soccer Academy logo" />
+                </div>
+                <div class="brand-text">
+                    <span>Ahlam Soccer Academy</span>
+                    <span>Building players on &amp; off the field</span>
+                </div>
+            </div>
+
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#values">Core Values</a>
+                <a href="#contact">Contact</a>
+                <a href="https://www.instagram.com/ahlamsoccer/" target="_blank" class="nav-cta">
+                    <span>Instagram</span> <span>↗</span>
+                </a>
+            </div>
+
+            <div class="nav-toggle" id="navToggle">
+                <span></span><span></span><span></span>
+            </div>
+        </nav>
+
+        <div class="nav-links-mobile" id="navMobile">
+            <a href="#about">About</a>
+            <a href="#values">Core Values</a>
+            <a href="#contact">Contact</a>
+            <a href="https://www.instagram.com/ahlamsoccer/" target="_blank" class="nav-cta">
+                <span>Instagram</span> <span>↗</span>
+            </a>
+        </div>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+    <div class="container hero-grid reveal">
+        <div>
+            <div class="hero-tag">
+                <span class="icon">⚽</span>
+                <span>Empowering young athletes</span>
+            </div>
+
+            <h1 class="hero-title">
+                From first kicks to
+                <span class="highlight">competitive excellence</span>.
+            </h1>
+
+            <p class="hero-slogan">
+                Empowering young athletes with values, guiding them from their first kicks
+                to competitive excellence.
+            </p>
+
+            <div class="hero-actions">
+                <button class="btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+                    Join the Academy
+                </button>
+                <a href="https://www.instagram.com/ahlamsoccer/" target="_blank" class="btn-ghost">
+                    View Training Highlights ↗
+                </a>
+            </div>
+
+            <div class="hero-meta">
+                <span><span class="dot"></span> Youth boys &amp; girls</span>
+                <span>Positivity • Discipline • Teamwork</span>
+            </div>
+        </div>
+
+        <div class="hero-card-wrap">
+            <div class="hero-card">
+                <div class="hero-card-header">
+                    <div class="badge-live">
+                        <span class="dot"></span>
+                        In season • Now enrolling
+                    </div>
+                    <div class="hero-card-logo">
+                        <!-- Same logo as above -->
+                        <img src="assets/logo-ahlam.png" alt="Ahlam Soccer Academy crest" />
+                    </div>
+                </div>
+
+                <div class="hero-card-body">
+                    <!-- Wide training photo -->
+                    <img src="assets/hero-training.jpg" alt="Players training at Ahlam Soccer Academy" />
+                </div>
+
+                <div class="hero-card-footer">
+                    <span>Sessions in <span class="highlight">Los Angeles Area</span></span>
+                    <span>Weekday &amp; weekend programs</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <div class="container reveal">
+        <div class="section-header">
+            <div class="section-kicker">About the Academy</div>
+            <h2 class="section-title">More than just soccer practice.</h2>
+            <p class="section-subtitle">
+                Ahlam Soccer Academy is a safe, uplifting environment where kids grow as
+                athletes and as people.
+            </p>
+        </div>
+
+        <div class="about-grid">
+            <div class="about-card">
+                <p>
+                    At <strong>Ahlam Soccer Academy</strong>, every session is designed around
+                    our core values: Excellence, Respect, Cooperation, and Hard Work.
+                </p>
+                <br />
+                <p>
+                    We focus on fundamentals, game IQ, and confidence, using age-appropriate
+                    drills and small-sided games. Players learn how to support their
+                    teammates, communicate, and carry themselves with character on and off
+                    the field.
+                </p>
+                <br />
+                <p>
+                    Whether your child is lacing up their cleats for the first time or
+                    preparing for competitive play, we guide them step by step.
+                </p>
+            </div>
+
+            <div class="about-points">
+                <div class="about-pill">
+                    <span class="label">Ages</span>
+                    <span class="value">Youth boys &amp; girls</span>
+                    <span>Grouped by age &amp; level.</span>
+                </div>
+
+                <div class="about-pill">
+                    <span class="label">Training style</span>
+                    <span class="value">Fun + disciplined</span>
+                    <span>High energy, positive coaching.</span>
+                </div>
+
+                <div class="about-pill">
+                    <span class="label">Focus</span>
+                    <span class="value">Technique &amp; character</span>
+                    <span>Ball mastery &amp; life skills.</span>
+                </div>
+
+                <div class="about-pill">
+                    <span class="label">Location</span>
+                    <span class="value">Local fields</span>
+                    <span>In the Los Angeles area.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CORE VALUES CAROUSEL -->
+<section id="values">
+    <div class="container reveal">
+        <div class="section-header">
+            <div class="section-kicker">Core Values</div>
+            <h2 class="section-title">What we teach through every drill.</h2>
+            <p class="section-subtitle">
+                These are the principles that guide Ahlam Soccer Academy&mdash;highlighted
+                with real moments from our players.
+            </p>
+        </div>
+
+        <div class="values-wrapper">
+            <div class="carousel" aria-live="polite">
+                <div class="carousel-inner">
+                    <!-- Slide 1: Excellence -->
+                    <article class="value-slide active" data-index="0">
+                        <div class="value-image-wrap">
+                            <img src="assets/values-excellence.jpg" alt="Team photo representing excellence" />
+                            <div class="value-image-placeholder">
+                                Add your "Excellence" team photo here.
+                            </div>
+                        </div>
+                        <div class="value-content">
+                            <div class="value-label">Core Value 01</div>
+                            <div class="value-title">
+                                <span class="emoji">✨</span>
+                                <span>Excellence</span>
+                            </div>
+                            <p class="value-body">
+                                We strive for perfection in all we do on and off the field. This
+                                principle guides our players to give their best effort, pay attention
+                                to details, and take pride in their growth.
+                            </p>
+                            <div class="value-tags">
+                                <span class="value-tag">High standards</span>
+                                <span class="value-tag">Pride in performance</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Slide 2: Respect -->
+                    <article class="value-slide" data-index="1">
+                        <div class="value-image-wrap">
+                            <img src="assets/values-respect.jpg" alt="Kids celebrating and respecting each other" />
+                            <div class="value-image-placeholder">
+                                Add your "Respect" celebration photo here.
+                            </div>
+                        </div>
+                        <div class="value-content">
+                            <div class="value-label">Core Value 02</div>
+                            <div class="value-title">
+                                <span class="emoji">🙌</span>
+                                <span>Respect</span>
+                            </div>
+                            <p class="value-body">
+                                We teach children to honor themselves, their teammates, their
+                                coaches, and the game itself. Respect builds character and creates a
+                                culture where everyone feels valued.
+                            </p>
+                            <div class="value-tags">
+                                <span class="value-tag">Sportsmanship</span>
+                                <span class="value-tag">Positive language</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Slide 3: Cooperation -->
+                    <article class="value-slide" data-index="2">
+                        <div class="value-image-wrap">
+                            <img src="assets/values-cooperation.jpg" alt="Team huddle representing cooperation" />
+                            <div class="value-image-placeholder">
+                                Add your "Cooperation" team huddle photo here.
+                            </div>
+                        </div>
+                        <div class="value-content">
+                            <div class="value-label">Core Value 03</div>
+                            <div class="value-title">
+                                <span class="emoji">👫</span>
+                                <span>Cooperation</span>
+                            </div>
+                            <p class="value-body">
+                                Soccer is the ultimate team sport. Our players learn that together,
+                                we achieve more than alone. We encourage communication, trust, and
+                                celebrating others' success.
+                            </p>
+                            <div class="value-tags">
+                                <span class="value-tag">Teamwork</span>
+                                <span class="value-tag">Unity</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Slide 4: Hard Work -->
+                    <article class="value-slide" data-index="3">
+                        <div class="value-image-wrap">
+                            <img src="assets/values-hardwork.jpg" alt="Kids training hard on the field" />
+                            <div class="value-image-placeholder">
+                                Add your "Hard Work" training photo here.
+                            </div>
+                        </div>
+                        <div class="value-content">
+                            <div class="value-label">Core Value 04</div>
+                            <div class="value-title">
+                                <span class="emoji">🏋️‍♀️</span>
+                                <span>Hard Work</span>
+                            </div>
+                            <p class="value-body">
+                                Excellence requires dedication. We instill a strong work ethic that
+                                serves children in all areas of life&mdash;showing them that effort
+                                plus consistency leads to real improvement.
+                            </p>
+                            <div class="value-tags">
+                                <span class="value-tag">Growth mindset</span>
+                                <span class="value-tag">Effort over excuses</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="carousel-controls">
+                    <div class="carousel-dots" aria-label="Select core value">
+                        <button class="dot-btn active" data-target="0"></button>
+                        <button class="dot-btn" data-target="1"></button>
+                        <button class="dot-btn" data-target="2"></button>
+                        <button class="dot-btn" data-target="3"></button>
+                    </div>
+                    <div class="carousel-nav">
+                        <button class="carousel-btn" id="prevSlide">‹ Prev</button>
+                        <button class="carousel-btn" id="nextSlide">Next ›</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+    <div class="container reveal">
+        <div class="section-header">
+            <div class="section-kicker">Get in touch</div>
+            <h2 class="section-title">Ready to get your child started?</h2>
+            <p class="section-subtitle">
+                Reach out with questions about sessions, pricing, and tryouts. We’re happy
+                to help you find the right fit.
+            </p>
+        </div>
+
+        <div class="contact-grid">
+            <div class="contact-card">
+                <h3>Contact Us</h3>
+
+                <div class="contact-row">
+                    <div class="contact-label">Email</div>
+                    <div class="contact-value">
+                        <a href="mailto:Ahlamsocceracademy@gmail.com">Ahlamsocceracademy@gmail.com</a>
+                    </div>
+                </div>
+
+                <div class="contact-row">
+                    <div class="contact-label">Phone</div>
+                    <div class="contact-value">
+                        <a href="tel:+14243939720">(424) 393-9720</a>
+                    </div>
+                </div>
+
+                <div class="socials">
+                    <a
+                            class="social-pill"
+                            href="https://www.instagram.com/ahlamsoccer/"
+                            target="_blank"
+                    >
+                        <span>📸</span>
+                        <span>@ahlamsoccer</span>
+                    </a>
+                </div>
+
+                <p class="contact-note">
+                    Message us for schedule details, locations, and how to book a trial
+                    session.
+                </p>
+            </div>
+
+            <div class="contact-cta">
+                <p>
+                    <strong>Next steps:</strong> send us your child’s name, age, playing
+                    experience (if any), and your preferred training days. We’ll respond with
+                    current program options and pricing.
+                </p>
+
+                <ul>
+                    <li>
+                        <span class="bullet"></span>
+                        <span>Weekly training blocks for beginning &amp; advanced players.</span>
+                    </li>
+                    <li>
+                        <span class="bullet"></span>
+                        <span>Opportunities for scrimmages and competitive matches.</span>
+                    </li>
+                    <li>
+                        <span class="bullet"></span>
+                        <span>Family-friendly environment with clear communication.</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="container">
+        © <span id="year"></span> <span class="highlight">Ahlam Soccer Academy</span>.
+        All rights reserved.
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
