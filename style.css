@@ -585,7 +585,7 @@ section {
     background: radial-gradient(circle at top, #342364, #130d24);
     border-radius: 28px;
     border: 1px solid rgba(195, 166, 255, 0.5);
-    padding: 18px 18px 18px;
+    padding: 18px 40px 18px;
     box-shadow: var(--shadow-soft);
     overflow: hidden;
 }
