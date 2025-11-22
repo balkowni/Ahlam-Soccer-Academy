@@ -21,13 +21,37 @@
     padding: 0;
 }
 
+/* ---------------- GLOBAL BACKGROUND ---------------- */
 body {
     font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     sans-serif;
+
+    /* main purple gradient background */
     background: radial-gradient(circle at top, #3a2b75 0, #130d24 40%, #050309 100%);
+
     color: var(--text-main);
     min-height: 100vh;
     scroll-behavior: smooth;
+
+    /* required so the overlay layers correctly */
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* ----------- FAINT SOCCER FIELD OVERLAY ----------- */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+
+    /* your soccer field background image */
+    background: url("assets/site-field-bg.jpg") center/contain repeat-y;
+
+    opacity: 0.08;                 /* subtle field visibility */
+    mix-blend-mode: screen;        /* blends nicely with dark gradients */
+
+    pointer-events: none;          /* don’t block clicking */
+    z-index: -2;                   /* sits behind everything */
 }
 
 img {
@@ -88,7 +112,7 @@ header {
 
     /* optional: keep the floating animation, or remove these two lines */
     transform: translateY(0);
-    animation: floatLogo 3.5s ease-in-out infinite;
+    animation: floatLogo 1.5s ease-in-out infinite;
 }
 
 .brand-logo img,
@@ -385,7 +409,7 @@ header {
     position: relative;
     overflow: hidden;
     transform-style: preserve-3d;
-    animation: heroTilt 16s ease-in-out infinite alternate;
+    animation: heroTilt 8s ease-in-out infinite alternate;
     backdrop-filter: blur(3px); /* Smooth turf look */
 }
 
@@ -607,7 +631,7 @@ section {
     opacity: 0;
     transform: translateX(18px) scale(0.98);
     pointer-events: none;
-    transition: opacity 420ms ease, transform 420ms ease;
+    transition: opacity 280ms ease, transform 280ms ease;
 }
 
 .value-slide.active {
@@ -895,7 +919,7 @@ footer span.highlight {
 .reveal {
     opacity: 0;
     transform: translateY(18px);
-    transition: opacity 480ms ease-out, transform 480ms ease-out;
+    transition: opacity 280ms ease-out, transform 280ms ease-out;
 }
 
 .reveal.visible {
