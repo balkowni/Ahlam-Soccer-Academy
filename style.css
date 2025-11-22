@@ -1151,3 +1151,29 @@ footer span.highlight {
     font-size: 0.96rem;
     line-height: 1.7;
 }
+
+/* about page photo */
+.aboutus-photo {
+    margin: 14px 0 16px;
+    border-radius: 22px;
+    overflow: hidden;
+    border: 1px solid rgba(195, 166, 255, 0.55);
+    background: radial-gradient(circle at top left, #5a3cc3, #1d103b);
+    box-shadow: var(--shadow-soft);
+    position: relative;
+}
+
+.aboutus-photo::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at top, rgba(0, 0, 0, 0.18), transparent 55%);
+    pointer-events: none;
+}
+
+.aboutus-photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
